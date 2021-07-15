@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sferrand\\Sergio\\00_ACTUAL\\CSharpProjects\\JumpTheQueue\\Templates\\WebAPI\\Devon4Net.WebAPI.Implementation\\Devon4Net.WebAPI.Implementation.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sferrand\\Sergio\\00_ACTUAL\\CSharpProjects\\JumpTheQueue\\Templates\\WebAPI\\Devon4Net.WebAPI.Implementation\\Devon4Net.WebAPI.Implementation.csproj": {
+      "version": "3.1.10",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sferrand\\Sergio\\00_ACTUAL\\CSharpProjects\\JumpTheQueue\\Templates\\WebAPI\\Devon4Net.WebAPI.Implementation\\Devon4Net.WebAPI.Implementation.csproj",
+        "projectName": "Devon4Net.WebAPI.Implementation",
+        "projectPath": "C:\\Users\\sferrand\\Sergio\\00_ACTUAL\\CSharpProjects\\JumpTheQueue\\Templates\\WebAPI\\Devon4Net.WebAPI.Implementation\\Devon4Net.WebAPI.Implementation.csproj",
+        "packagesPath": "C:\\Users\\sferrand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sferrand\\Sergio\\00_ACTUAL\\CSharpProjects\\JumpTheQueue\\Templates\\WebAPI\\Devon4Net.WebAPI.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sferrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605",
+            "NU1608",
+            "NU1701"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Devon4Net.Infrastructure.AnsibleTower": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.CircuitBreaker": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.Common": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.CyberArk": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.Extensions": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.FluentValidation": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.JWT": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.LiteDb": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.Log": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.MediatR": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.Middleware": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.RabbitMQ": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.SmaxHcm": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Devon4Net.Infrastructure.UnitOfWork": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.AspNetCore.Authorization.Policy": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
