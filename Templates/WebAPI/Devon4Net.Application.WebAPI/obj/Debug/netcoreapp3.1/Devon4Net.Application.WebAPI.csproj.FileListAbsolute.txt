@@ -1,8 +1,3 @@
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.csprojAssemblyReference.cache
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.AssemblyInfoInputs.cache
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.AssemblyInfo.cs
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.exe
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Devon4Net.WebAPI.Implementation.xml
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -78,6 +73,7 @@ C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Cosmos.dll
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -212,6 +208,12 @@ C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Devon4Net.WebAPI.Implementation.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\bin\Debug\netcoreapp3.1\Devon4Net.WebAPI.Implementation.pdb
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.csprojAssemblyReference.cache
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.AssemblyInfoInputs.cache
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.AssemblyInfo.cs
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Devon4Net.Application.WebAPI.StaticWebAssets.Manifest.cache
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Devon4Net.Application.WebAPI.StaticWebAssets.xml
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\Devon4Net.Application.WebAPI.styles.css
@@ -220,4 +222,3 @@ C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.pdb
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.genruntimeconfig.cache
-C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI\obj\Debug\netcoreapp3.1\Devon4Net.Application.WebAPI.MvcApplicationPartsAssemblyInfo.cs

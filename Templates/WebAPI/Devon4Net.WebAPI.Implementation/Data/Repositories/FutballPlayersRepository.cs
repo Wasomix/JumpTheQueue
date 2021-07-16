@@ -1,21 +1,35 @@
-﻿using Devon4Net.Infrastructure.Log;
+﻿using Devon4Net.Domain.UnitOfWork.Repository;
+using Devon4Net.Infrastructure.Log;
+using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto;
+using Devon4Net.WebAPI.Implementation.Domain.Database;
+using Devon4Net.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Devon4Net.WebAPI.Implementation.Data.Repositories
 {
-    public class FutballPlayersRepository : IFutballPlayersRepository
+    public class FutballPlayersRepository : Repository<FutballPlayers>, IFutballPlayersRepository
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="context"></param>
+        public FutballPlayersRepository(FutballPlayersContext context/*, TodosFluentValidator futballPlayersValidator*/) : base(context)
+        {
+            //FutballPlayersValidator = futballPlayersValidator;
+        }
+
         /// <summary>
         /// GetAllFutballPlayers method
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        public Task<IList<Todos>> GetAllFutballPlayers(Expression<Func<Todos, bool>> predicate = null)
+        public Task<IList<FutballPlayers>> GetAllFutballPlayers(Expression<Func<FutballPlayers, bool>> predicate = null)
         {
-            Devon4NetLogger.Debug("GetAllFutballPlayers method from TodoRepository TodoService");
+            Devon4NetLogger.Debug("GetAllFutballPlayers method from FutballPlayersRepository");
             return Get(predicate);
         }
 
@@ -33,21 +47,27 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// <summary>
         /// AddNewFutballPlayer
         /// </summary>
-        /// <param name="description"></param>
+        /// <param name="futballPlayer"></param>
         /// <returns></returns>
-        public Task<Todos> AddNewFutballPlayer(FutballPlayerDto futballPlayer)
+        public Task<FutballPlayers> AddNewFutballPlayer(FutballPlayerDto futballPlayer)
         {
             Devon4NetLogger.Debug("AddNewFutballPlayer method from repository FutballPlayersRepository");
 
-            var todo = new Todos { Description = description };
-            var result = TodosValidator.Validate(todo);
+            var newFutballPlayer = new FutballPlayers 
+            { 
+                Id = futballPlayer.Id,
+                FirstName = futballPlayer.FirstName,
+                LastName = futballPlayer.LastName,
+                FutballTeam = futballPlayer.FutballTeam
+            };
+            /*var result = FutballPlayersValidator.Validate(newFutballPlayer);
 
             if (!result.IsValid)
             {
-                throw new ArgumentException($"The 'Description' field can not be null.{result.Errors}");
-            }
+                throw new ArgumentException("FutballPlayer validation error");
+            }*/
 
-            return Create(todo);
+            return Create(newFutballPlayer);
         }
     }
 }
