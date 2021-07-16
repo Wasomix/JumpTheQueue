@@ -49,24 +49,6 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Cont
         }
 
         /// <summary>
-        /// Returns futball player from given its Id
-        /// </summary>
-        /// <returns></returns>
-        /*[HttpPut]
-        [ProducesResponseType(typeof(FutballPlayerDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpOptions]
-        public async Task<ActionResult> GetFutballPlayerById(long futballPlayerId)
-        {
-            MethodBase m = MethodBase.GetCurrentMethod();
-            Devon4NetLogger.Debug($"Executing {m.ReflectedType.Name}" +
-                " from controller {m.Name}");
-            return Ok(await _futballPlayersServiceHandler.GetFutballPlayerById(futballPlayerId).ConfigureAwait(false));
-        }*/
-
-        /// <summary>
         /// Create new futball player
         /// </summary>
         /// <returns></returns>

@@ -33,17 +33,6 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             return Get(predicate);
         }
 
-        /*/// <summary>
-        /// Geto the TODO by id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public Task<Todos> GetTodoById(long id)
-        {
-            Devon4NetLogger.Debug($"GetTodoById method from repository TodoService with value : {id}");
-            return GetFirstOrDefault(t => t.Id == id);
-        }*/
-
         /// <summary>
         /// AddNewFutballPlayer
         /// </summary>
@@ -60,12 +49,6 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
                 LastName = futballPlayer.LastName,
                 FutballTeam = futballPlayer.FutballTeam
             };
-            /*var result = FutballPlayersValidator.Validate(newFutballPlayer);
-
-            if (!result.IsValid)
-            {
-                throw new ArgumentException("FutballPlayer validation error");
-            }*/
 
             return Create(newFutballPlayer);
         }

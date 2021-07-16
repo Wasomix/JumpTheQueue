@@ -4,8 +4,6 @@ using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands
 using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto;
 using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Service;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
