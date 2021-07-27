@@ -22,6 +22,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Conv
         {
             return new FutballPlayerDto 
             { 
+                Id          = futballplayer.Id,
                 FirstName   = futballplayer.FirstName, 
                 LastName    = futballplayer.LastName,
                 FutballTeam = futballplayer.FutballTeam

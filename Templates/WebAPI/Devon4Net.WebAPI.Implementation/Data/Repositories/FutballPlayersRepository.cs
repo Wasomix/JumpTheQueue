@@ -44,7 +44,6 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
 
             var newFutballPlayer = new FutballPlayers 
             { 
-                Id = futballPlayer.Id,
                 FirstName = futballPlayer.FirstName,
                 LastName = futballPlayer.LastName,
                 FutballTeam = futballPlayer.FutballTeam

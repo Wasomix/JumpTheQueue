@@ -44,7 +44,6 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Hand
 
             var futballPlayer = new FutballPlayerDto
             {
-                Id = 1,
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 FutballTeam = request.FutballTeam,
