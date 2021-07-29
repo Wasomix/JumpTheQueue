@@ -7,3 +7,4 @@ C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.WebAPI.Implementation\obj\Debug\netstandard2.1\Devon4Net.WebAPI.Implementation.csproj.CoreCompileInputs.cache
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.WebAPI.Implementation\obj\Debug\netstandard2.1\Devon4Net.WebAPI.Implementation.dll
 C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.WebAPI.Implementation\obj\Debug\netstandard2.1\Devon4Net.WebAPI.Implementation.pdb
+C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.WebAPI.Implementation\obj\Debug\netstandard2.1\Devon4Net.WebAPI.Implementation.csprojAssemblyReference.cache
