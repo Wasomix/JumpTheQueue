@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  devon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8085:8085
+    depends_on:
+      - sqlddbb
+      
+  sqlddbb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - 1422:1433
+    environment:
+      SA_PASSWORD: "AdMiN_123;"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+      MSSQL_AGENT_ENABLED: "True"
+    volumes:
+      - sqlserver-data:/var/lib/sqlserver 
+      
+volumes:
+  sqlserver-data:
