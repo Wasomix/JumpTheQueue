@@ -113,7 +113,7 @@ namespace Devon4Net.WebAPI.Implementation.Configure
         {
             services.SetupDatabase<TodoContext>(configuration, "Default", DatabaseType.InMemory);
             services.SetupDatabase<EmployeeContext>(configuration, "Employee", DatabaseType.InMemory);
-            services.SetupDatabase<FutballPlayersContext>(configuration, "FutballPlayersDB", DatabaseType.SqlServer, migrate:true);
+            services.SetupDatabase<FutballPlayersContext>(configuration, "FutballPlayersDB", DatabaseType.SqlServer);
         }
 
         private static void SetupJwtPolicies(ref IServiceCollection services)
