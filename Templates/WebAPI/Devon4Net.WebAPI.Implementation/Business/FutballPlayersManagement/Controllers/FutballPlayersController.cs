@@ -102,18 +102,12 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Cont
             if (RabbitMqOptions?.Hosts == null || !RabbitMqOptions.Hosts.Any())
                 return StatusCode(StatusCodes.Status500InternalServerError, "No RabbitMq instance set up");
 
-            //if (string.IsNullOrEmpty(todoDescription))
-            //{
-            //    return StatusCode(StatusCodes.Status400BadRequest, "Please provide a valid description for the TO-DO");
-            //}
+            if (futballPlayer == null)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, "Please provide a valid description for futball player");
+            }
 
             var commandRabbitMq = new AddNewFutballPlayerCommandRabbitMq(futballPlayer);
-            //var commandRabbitMq = new AddNewFutballPlayerCommandRabbitMq()
-            //{ 
-            //    FirstName = futballPlayer.FirstName,
-            //    LastName = futballPlayer.LastName,
-            //    FutballTeam = futballPlayer.FutballTeam
-            //};
             var published = await FutballPlayersRabbitMqHandler.Publish(commandRabbitMq).ConfigureAwait(false);
             return Ok(published);
         }
