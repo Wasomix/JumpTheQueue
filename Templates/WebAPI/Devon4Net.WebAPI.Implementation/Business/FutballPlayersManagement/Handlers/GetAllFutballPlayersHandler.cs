@@ -1,6 +1,7 @@
 ﻿using Devon4Net.Infrastructure.MediatR.Domain.ServiceInterfaces;
 using Devon4Net.Infrastructure.MediatR.Handler;
 using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto;
+using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions;
 using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Queries;
 using Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Service;
 using System;
@@ -38,7 +39,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Hand
         {
             if (FutballPlayersService == null)
             {
-                throw new ArgumentException("The service 'FutballPlayersService' is not ready. Please check your dependency injection declaration for this service");
+                throw new FutballPlayersNotFoundException("The service 'FutballPlayersService' is not ready. Please check your dependency injection declaration for this service");
             }
 
             var result = await FutballPlayersService.GetAllFutballPlayers().ConfigureAwait(false);

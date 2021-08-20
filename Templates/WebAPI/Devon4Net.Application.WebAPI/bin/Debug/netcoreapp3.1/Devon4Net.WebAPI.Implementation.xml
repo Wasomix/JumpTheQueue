@@ -542,6 +542,41 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.AddNewFutballPlayerRabbitMq(Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto)">
+            <summary>
+            Creates a AddNewFutballPlayerCommandRabbitMq command sending a 
+            RabbitMq message
+            </summary>
+            <param name="futballPlayer">The description of the TO-DO 
+            command. It cannot be empty</param>
+            <returns></returns>
+        </member>
+        <member name="T:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException">
+            <summary>
+            Custom exception FutballPlayersNotFoundException
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException.StatusCode">
+            <summary>
+            The forced http status code to be fired on the exception manager
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException.ShowMessage">
+            <summary>
+            Show the message on the response?
+            </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException"/> class.
+            </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Exceptions.FutballPlayersNotFoundException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.MediatRManagement.Commands.CreateTodoCommand">
             <summary>
             THe command to create a TO-DO

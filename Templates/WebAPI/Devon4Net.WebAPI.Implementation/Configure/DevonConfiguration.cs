@@ -84,6 +84,7 @@ namespace Devon4Net.WebAPI.Implementation.Configure
         {
             services.AddRabbitMqHandler<UserSampleRabbitMqHandler>(true);
             services.AddRabbitMqHandler<TodoRabbitMqHandler>(true);
+            services.AddRabbitMqHandler<AddNewFutballPlayersHandlerRabbitMq>(true);
         }
 
         private static void SetupMediatRHandlers(IServiceCollection services)

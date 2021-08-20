@@ -11,9 +11,12 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Comm
 
         public AddNewFutballPlayerCommand(FutballPlayerDto futballPlayer)
         {
-            FirstName = futballPlayer.FirstName;
-            LastName = futballPlayer.LastName;
-            FutballTeam = futballPlayer.FutballTeam;
+            if (futballPlayer != null)
+            {
+                FirstName = futballPlayer.FirstName;
+                LastName = futballPlayer.LastName;
+                FutballTeam = futballPlayer.FutballTeam;
+            }
         }
     }
 }
