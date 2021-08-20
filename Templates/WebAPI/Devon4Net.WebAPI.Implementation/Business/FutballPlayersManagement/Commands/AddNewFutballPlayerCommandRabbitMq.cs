@@ -9,14 +9,16 @@ namespace Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Comm
         public string LastName { get; set; }
         public string FutballTeam { get; set; }
 
+        public AddNewFutballPlayerCommandRabbitMq()
+        {
+
+        }
+
         public AddNewFutballPlayerCommandRabbitMq(FutballPlayerDto futballPlayer)
         {
-            if (futballPlayer != null)
-            {
-                FirstName = futballPlayer.FirstName;
-                LastName = futballPlayer.LastName;
-                FutballTeam = futballPlayer.FutballTeam;
-            }
+            FirstName = futballPlayer.FirstName;
+            LastName = futballPlayer.LastName;
+            FutballTeam = futballPlayer.FutballTeam;
         }
     }
 }

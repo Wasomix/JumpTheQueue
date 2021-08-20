@@ -2194,3 +2194,553 @@ FROM [FutballPlayers] AS [f]
 2021-08-20 09:05:06.450 +02:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.GetAllFutballPlayers (Devon4Net.WebAPI.Implementation) in 613.7605ms
 2021-08-20 09:05:06.460 +02:00 [DBG] 'FutballPlayersContext' disposed.
 2021-08-20 09:05:06.467 +02:00 [INF] Request finished in 770.4765ms 200 application/json; charset=utf-8
+2021-08-20 09:13:19.377 +02:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-08-20 09:13:19.869 +02:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-08-20 09:13:20.371 +02:00 [INF] Connected to broker 127.0.0.1, port 5672
+2021-08-20 09:13:20.402 +02:00 [DBG] Declared queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:13:20.421 +02:00 [DBG] Declared exchange Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:13:20.440 +02:00 [DBG] Bound queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand to exchange Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ with routingKey=# and arguments=null
+2021-08-20 09:13:20.465 +02:00 [DBG] EasyNetQ consumer dispatch thread started
+2021-08-20 09:13:20.513 +02:00 [INF] Declared consumer with consumerTag c810568f-28db-4e4d-9fc0-8f22a49a4e9b on queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:13:20.521 +02:00 [DBG] Declared queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:13:20.539 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:13:20.559 +02:00 [DBG] Bound queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand to exchange Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation with routingKey=# and arguments=null
+2021-08-20 09:13:20.574 +02:00 [INF] Declared consumer with consumerTag de823d0b-13f8-4845-a0e5-83f77371bdf0 on queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:13:20.595 +02:00 [DBG] Declared queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:13:20.608 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:13:20.619 +02:00 [DBG] Bound queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq to exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation with routingKey=# and arguments=null
+2021-08-20 09:13:20.641 +02:00 [INF] Declared consumer with consumerTag 5034b554-f4c0-4cb5-911f-9e891c590cfb on queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:13:20.924 +02:00 [DBG] Hosting starting
+2021-08-20 09:13:21.014 +02:00 [INF] User profile is available. Using 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-20 09:13:21.151 +02:00 [DBG] Reading data from file 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys\key-a7fe8742-2553-4947-9ee7-47b5209a638b.xml'.
+2021-08-20 09:13:21.191 +02:00 [DBG] Reading data from file 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys\key-eccb87d5-164f-49ed-b48f-655fa635d96e.xml'.
+2021-08-20 09:13:21.208 +02:00 [DBG] Found key {a7fe8742-2553-4947-9ee7-47b5209a638b}.
+2021-08-20 09:13:21.223 +02:00 [DBG] Found key {eccb87d5-164f-49ed-b48f-655fa635d96e}.
+2021-08-20 09:13:21.248 +02:00 [DBG] Considering key {a7fe8742-2553-4947-9ee7-47b5209a638b} with expiration date 2021-09-29 12:18:05Z as default key.
+2021-08-20 09:13:21.272 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-08-20 09:13:21.285 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2021-08-20 09:13:21.290 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-08-20 09:13:21.313 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-08-20 09:13:21.322 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-08-20 09:13:21.334 +02:00 [DBG] Using key {a7fe8742-2553-4947-9ee7-47b5209a638b} as the default key.
+2021-08-20 09:13:21.341 +02:00 [DBG] Key ring with default key {a7fe8742-2553-4947-9ee7-47b5209a638b} was loaded during application startup.
+2021-08-20 09:13:21.472 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-08-20 09:13:21.544 +02:00 [DBG] Initializing Razor view compiler with no compiled views.
+2021-08-20 09:13:21.632 +02:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-08-20 09:13:21.651 +02:00 [WRN] Overriding address(es) 'https://localhost:8085'. Binding to endpoints defined in UseKestrel() instead.
+2021-08-20 09:13:21.693 +02:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-08-20 09:13:21.696 +02:00 [DBG] Loaded hosting startup assembly Devon4Net.Application.WebAPI
+2021-08-20 09:13:21.699 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-20 09:13:21.702 +02:00 [INF] Hosting environment: Development
+2021-08-20 09:13:21.704 +02:00 [INF] Content root path: C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI
+2021-08-20 09:13:21.708 +02:00 [DBG] Hosting started
+2021-08-20 09:13:22.134 +02:00 [DBG] Connection id "0HMB3L7V92RVH" accepted.
+2021-08-20 09:13:22.141 +02:00 [DBG] Connection id "0HMB3L7V92RVH" started.
+2021-08-20 09:13:22.274 +02:00 [DBG] Connection id "0HMB3L7V92RVH" received FIN.
+2021-08-20 09:13:22.314 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:13:22.419 +02:00 [DBG] Connection id "0HMB3L7V92RVH" stopped.
+2021-08-20 09:13:22.426 +02:00 [DBG] Connection id "0HMB3L7V92RVH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:13:24.202 +02:00 [DBG] Connection id "0HMB3L7V92RVI" accepted.
+2021-08-20 09:13:24.282 +02:00 [DBG] Connection id "0HMB3L7V92RVI" started.
+2021-08-20 09:13:24.396 +02:00 [DBG] Connection id "0HMB3L7V92RVJ" accepted.
+2021-08-20 09:13:24.398 +02:00 [DBG] Connection id "0HMB3L7V92RVJ" started.
+2021-08-20 09:13:24.455 +02:00 [DBG] Connection id "0HMB3L7V92RVJ" received FIN.
+2021-08-20 09:13:24.466 +02:00 [DBG] Connection id "0HMB3L7V92RVI" received FIN.
+2021-08-20 09:13:24.472 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:13:24.472 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:13:24.535 +02:00 [DBG] Connection id "0HMB3L7V92RVJ" stopped.
+2021-08-20 09:13:24.576 +02:00 [DBG] Connection id "0HMB3L7V92RVI" stopped.
+2021-08-20 09:13:24.578 +02:00 [DBG] Connection id "0HMB3L7V92RVJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:13:24.580 +02:00 [DBG] Connection id "0HMB3L7V92RVI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:13:24.770 +02:00 [DBG] Connection id "0HMB3L7V92RVK" accepted.
+2021-08-20 09:13:24.777 +02:00 [DBG] Connection id "0HMB3L7V92RVK" started.
+2021-08-20 09:13:24.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html  
+2021-08-20 09:13:24.941 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-08-20 09:13:24.944 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:13:24.960 +02:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-08-20 09:13:24.985 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:13:25.028 +02:00 [DBG] Connection id "0HMB3L7V92RVL" accepted.
+2021-08-20 09:13:25.031 +02:00 [DBG] Connection id "0HMB3L7V92RVL" started.
+2021-08-20 09:13:25.181 +02:00 [INF] Request finished in 249.4331ms 200 text/html;charset=utf-8
+2021-08-20 09:13:25.217 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js  
+2021-08-20 09:13:25.217 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js  
+2021-08-20 09:13:25.217 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css  
+2021-08-20 09:13:25.219 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:13:25.222 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:13:25.224 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:13:25.231 +02:00 [DBG] The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file
+2021-08-20 09:13:25.234 +02:00 [DBG] The request path /swagger/swagger-ui-bundle.js does not match an existing file
+2021-08-20 09:13:25.238 +02:00 [DBG] The request path /swagger/swagger-ui.css does not match an existing file
+2021-08-20 09:13:25.242 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:13:25.247 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:13:25.251 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:13:25.328 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-08-20 09:13:25.328 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-20 09:13:25.333 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-08-20 09:13:25.348 +02:00 [INF] Request finished in 131.1113ms 200 application/javascript
+2021-08-20 09:13:25.348 +02:00 [INF] Request finished in 131.0659ms 200 application/javascript
+2021-08-20 09:13:25.348 +02:00 [INF] Request finished in 130.7131ms 200 text/css
+2021-08-20 09:13:25.620 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json  
+2021-08-20 09:13:25.623 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:13:25.627 +02:00 [DBG] The request path /swagger/v1/swagger.json does not match an existing file
+2021-08-20 09:13:25.631 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:13:27.466 +02:00 [INF] Request finished in 1847.3335ms 200 application/json;charset=utf-8
+2021-08-20 09:14:55.691 +02:00 [INF] Request starting HTTP/2 POST https://localhost:8085/add_futball_player_rabbitMq application/json 60
+2021-08-20 09:14:55.695 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:14:55.700 +02:00 [DBG] POST requests are not supported
+2021-08-20 09:14:55.708 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:14:55.718 +02:00 [DBG] POST requests are not supported
+2021-08-20 09:14:55.768 +02:00 [DBG] No candidates found for the request path '/add_futball_player_rabbitMq'
+2021-08-20 09:14:55.771 +02:00 [DBG] Request did not match any endpoints
+2021-08-20 09:14:55.899 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-08-20 09:14:55.963 +02:00 [DBG] Request successfully matched the route with name 'null' and template 'add_futball_player_rabbitMq'
+2021-08-20 09:14:56.044 +02:00 [INF] Route matched with {action = "AddNewFutballPlayerRabbitMq", controller = "FutballPlayers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddNewFutballPlayerRabbitMq(Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto) on controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation).
+2021-08-20 09:14:56.058 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-08-20 09:14:56.067 +02:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-08-20 09:14:56.074 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-08-20 09:14:56.086 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-08-20 09:14:56.099 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-08-20 09:14:56.114 +02:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-08-20 09:14:56.120 +02:00 [INF] CORS policy execution successful.
+2021-08-20 09:14:56.127 +02:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:14:56.139 +02:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:14:56.181 +02:00 [DBG] Attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' ...
+2021-08-20 09:14:56.198 +02:00 [DBG] Attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' using the name '' in request data ...
+2021-08-20 09:14:56.210 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-08-20 09:14:56.221 +02:00 [DBG] Connection id "0HMB3L7V92RVK", Request id "0HMB3L7V92RVK:0000000B": started reading request body.
+2021-08-20 09:14:56.226 +02:00 [DBG] Connection id "0HMB3L7V92RVK", Request id "0HMB3L7V92RVK:0000000B": done reading request body.
+2021-08-20 09:14:56.239 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'
+2021-08-20 09:14:56.245 +02:00 [DBG] Done attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:14:56.254 +02:00 [DBG] Done attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:14:56.263 +02:00 [DBG] Attempting to validate the bound parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' ...
+2021-08-20 09:14:56.285 +02:00 [DBG] Done attempting to validate the bound parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:14:56.301 +02:00 [DBG] Executing AddNewFutballPlayerRabbitMq from controller FutballPlayersController
+2021-08-20 09:14:56.330 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:14:56.411 +02:00 [DBG] Published to exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation with routingKey= and correlationId=83f08bf7-f723-49a7-83bd-c5cd9b99da49
+2021-08-20 09:14:56.421 +02:00 [INF] Message AddNewFutballPlayerCommandRabbitMq with identifier '3a9956d3-3fbc-4860-aab8-30b87cc48634' published
+2021-08-20 09:14:56.427 +02:00 [DBG] Message delivered to consumer 5034b554-f4c0-4cb5-911f-9e891c590cfb with deliveryTag 1
+2021-08-20 09:14:56.441 +02:00 [DBG] Received message with receivedInfo=[ConsumerTag=5034b554-f4c0-4cb5-911f-9e891c590cfb, DeliveryTag=1, Redelivered=False, Exchange=Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation, RoutingKey=, Queue=Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq]
+2021-08-20 09:14:56.445 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-08-20 09:14:56.484 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-08-20 09:14:56.488 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-08-20 09:14:56.497 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-08-20 09:14:56.503 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-08-20 09:14:56.508 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-08-20 09:14:56.517 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2021-08-20 09:14:56.541 +02:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.AddNewFutballPlayerRabbitMq (Devon4Net.WebAPI.Implementation) in 423.6858ms
+2021-08-20 09:14:56.549 +02:00 [INF] Request finished in 858.6063ms 200 application/json; charset=utf-8
+2021-08-20 09:14:56.800 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-08-20 09:14:56.844 +02:00 [DBG] AddNewFutballPlayer method from repository FutballPlayersRepository
+2021-08-20 09:14:57.635 +02:00 [INF] Entity Framework Core 3.1.13 initialized 'FutballPlayersContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-20 09:14:57.757 +02:00 [DBG] 'FutballPlayersContext' generated a temporary value for the 'Id' property of new 'FutballPlayers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:14:57.848 +02:00 [DBG] Context 'FutballPlayersContext' started tracking 'FutballPlayers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:14:57.859 +02:00 [DBG] SaveChanges starting for 'FutballPlayersContext'.
+2021-08-20 09:14:57.878 +02:00 [DBG] DetectChanges starting for 'FutballPlayersContext'.
+2021-08-20 09:14:57.896 +02:00 [DBG] DetectChanges completed for 'FutballPlayersContext'.
+2021-08-20 09:14:58.008 +02:00 [DBG] Opening connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:14:58.460 +02:00 [DBG] Opened connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:14:58.471 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2021-08-20 09:14:58.506 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2021-08-20 09:14:58.605 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2021-08-20 09:14:58.625 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (9ms).
+2021-08-20 09:14:58.716 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FutballPlayers] ([FirstName], [FutballTeam], [LastName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FutballPlayers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-08-20 09:14:58.857 +02:00 [INF] Executed DbCommand (147ms) [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FutballPlayers] ([FirstName], [FutballTeam], [LastName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FutballPlayers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-08-20 09:14:58.927 +02:00 [DBG] Foreign key property 'FutballPlayers.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2021-08-20 09:14:58.947 +02:00 [DBG] A data reader was disposed.
+2021-08-20 09:14:58.955 +02:00 [DBG] Committing transaction.
+2021-08-20 09:14:58.973 +02:00 [DBG] Committing transaction.
+2021-08-20 09:14:58.978 +02:00 [DBG] Closing connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:14:58.993 +02:00 [DBG] Closed connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:14:59.003 +02:00 [DBG] Disposing transaction.
+2021-08-20 09:14:59.042 +02:00 [DBG] An 'FutballPlayers' entity tracked by 'FutballPlayersContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:14:59.052 +02:00 [DBG] SaveChanges completed for 'FutballPlayersContext' with 1 entities written to the database.
+2021-08-20 09:14:59.059 +02:00 [DBG] An 'FutballPlayers' entity tracked by 'FutballPlayersContext' changed from '"Unchanged"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:14:59.073 +02:00 [INF] Message AddNewFutballPlayerCommandRabbitMq with identifier '3a9956d3-3fbc-4860-aab8-30b87cc48634' published
+2021-08-20 09:15:03.341 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/get_all_futball_players  
+2021-08-20 09:15:03.346 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:15:03.351 +02:00 [DBG] The request path /get_all_futball_players does not match a supported file type
+2021-08-20 09:15:03.361 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:15:03.372 +02:00 [DBG] The request path  does not match the path filter
+2021-08-20 09:15:03.379 +02:00 [DBG] No candidates found for the request path '/get_all_futball_players'
+2021-08-20 09:15:03.387 +02:00 [DBG] Request did not match any endpoints
+2021-08-20 09:15:03.394 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-08-20 09:15:03.406 +02:00 [DBG] Request successfully matched the route with name 'null' and template 'get_all_futball_players'
+2021-08-20 09:15:03.420 +02:00 [INF] Route matched with {action = "GetAllFutballPlayers", controller = "FutballPlayers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllFutballPlayers() on controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation).
+2021-08-20 09:15:03.441 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-08-20 09:15:03.454 +02:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-08-20 09:15:03.463 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-08-20 09:15:03.475 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-08-20 09:15:03.487 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-08-20 09:15:03.510 +02:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:15:03.528 +02:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:15:03.545 +02:00 [DBG] Executing <GetAllFutballPlayers>d__13 from controller {m.Name}
+2021-08-20 09:15:03.599 +02:00 [DBG] GetAllFutballPlayers method from service FutballPlayersService
+2021-08-20 09:15:03.604 +02:00 [DBG] GetAllFutballPlayers method from FutballPlayersRepository
+2021-08-20 09:15:03.686 +02:00 [INF] Entity Framework Core 3.1.13 initialized 'FutballPlayersContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-20 09:15:03.941 +02:00 [DBG] queryContext => new QueryingEnumerable<FutballPlayers>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    ReaderColumn[] { ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, }, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, FutballPlayers>, 
+    Devon4Net.WebAPI.Implementation.Domain.Database.FutballPlayersContext, 
+    null
+)
+2021-08-20 09:15:04.002 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2021-08-20 09:15:04.007 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2021-08-20 09:15:04.014 +02:00 [DBG] Opening connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:15:04.023 +02:00 [DBG] Opened connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:15:04.029 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[FirstName], [f].[FutballTeam], [f].[LastName]
+FROM [FutballPlayers] AS [f]
+2021-08-20 09:15:04.053 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[FirstName], [f].[FutballTeam], [f].[LastName]
+FROM [FutballPlayers] AS [f]
+2021-08-20 09:15:04.131 +02:00 [DBG] A data reader was disposed.
+2021-08-20 09:15:04.137 +02:00 [DBG] Closing connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:15:04.145 +02:00 [DBG] Closed connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:15:04.166 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-08-20 09:15:04.183 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-08-20 09:15:04.194 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-08-20 09:15:04.204 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-08-20 09:15:04.212 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-08-20 09:15:04.218 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-08-20 09:15:04.226 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto, Devon4Net.WebAPI.Implementation, Version=3.1.10.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-20 09:15:04.246 +02:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.GetAllFutballPlayers (Devon4Net.WebAPI.Implementation) in 736.1141ms
+2021-08-20 09:15:04.261 +02:00 [DBG] 'FutballPlayersContext' disposed.
+2021-08-20 09:15:04.270 +02:00 [INF] Request finished in 928.7549ms 200 application/json; charset=utf-8
+2021-08-20 09:20:42.713 +02:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-08-20 09:20:43.205 +02:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-08-20 09:20:43.752 +02:00 [INF] Connected to broker 127.0.0.1, port 5672
+2021-08-20 09:20:43.782 +02:00 [DBG] Declared queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:20:43.804 +02:00 [DBG] Declared exchange Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:20:43.827 +02:00 [DBG] Bound queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand to exchange Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ with routingKey=# and arguments=null
+2021-08-20 09:20:43.854 +02:00 [DBG] EasyNetQ consumer dispatch thread started
+2021-08-20 09:20:43.889 +02:00 [INF] Declared consumer with consumerTag 9a79a707-e4bd-4d36-822b-5ae89afb1ccb on queue Devon4Net.Infrastructure.RabbitMQ.Samples.Commads.UserSampleCommand, Devon4Net.Infrastructure.RabbitMQ_UserSampleCommand and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:20:43.899 +02:00 [DBG] Declared queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:20:43.908 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:20:43.920 +02:00 [DBG] Bound queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand to exchange Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation with routingKey=# and arguments=null
+2021-08-20 09:20:43.942 +02:00 [INF] Declared consumer with consumerTag 068fc11e-e302-45ce-9a80-c2e46615deae on queue Devon4Net.WebAPI.Implementation.Business.RabbitMqManagement.Commands.TodoCommand, Devon4Net.WebAPI.Implementation_TodoCommand and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:20:43.956 +02:00 [DBG] Declared queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq: durable=true, exclusive=false, autoDelete=false, arguments=null
+2021-08-20 09:20:43.968 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:20:43.978 +02:00 [DBG] Bound queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq to exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation with routingKey=# and arguments=null
+2021-08-20 09:20:43.997 +02:00 [INF] Declared consumer with consumerTag 6e97a714-c48c-4ea2-add0-e32f8033edf0 on queue Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq and configuration EasyNetQ.ConsumerConfiguration
+2021-08-20 09:20:44.221 +02:00 [DBG] Hosting starting
+2021-08-20 09:20:44.323 +02:00 [INF] User profile is available. Using 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-08-20 09:20:44.448 +02:00 [DBG] Reading data from file 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys\key-a7fe8742-2553-4947-9ee7-47b5209a638b.xml'.
+2021-08-20 09:20:44.480 +02:00 [DBG] Reading data from file 'C:\Users\sferrand\AppData\Local\ASP.NET\DataProtection-Keys\key-eccb87d5-164f-49ed-b48f-655fa635d96e.xml'.
+2021-08-20 09:20:44.505 +02:00 [DBG] Found key {a7fe8742-2553-4947-9ee7-47b5209a638b}.
+2021-08-20 09:20:44.526 +02:00 [DBG] Found key {eccb87d5-164f-49ed-b48f-655fa635d96e}.
+2021-08-20 09:20:44.547 +02:00 [DBG] Considering key {a7fe8742-2553-4947-9ee7-47b5209a638b} with expiration date 2021-09-29 12:18:05Z as default key.
+2021-08-20 09:20:44.590 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-08-20 09:20:44.627 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2021-08-20 09:20:44.633 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-08-20 09:20:44.645 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-08-20 09:20:44.656 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-08-20 09:20:44.666 +02:00 [DBG] Using key {a7fe8742-2553-4947-9ee7-47b5209a638b} as the default key.
+2021-08-20 09:20:44.669 +02:00 [DBG] Key ring with default key {a7fe8742-2553-4947-9ee7-47b5209a638b} was loaded during application startup.
+2021-08-20 09:20:44.807 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-08-20 09:20:44.861 +02:00 [DBG] Initializing Razor view compiler with no compiled views.
+2021-08-20 09:20:44.920 +02:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-08-20 09:20:44.927 +02:00 [WRN] Overriding address(es) 'https://localhost:8085'. Binding to endpoints defined in UseKestrel() instead.
+2021-08-20 09:20:44.964 +02:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-08-20 09:20:44.969 +02:00 [DBG] Loaded hosting startup assembly Devon4Net.Application.WebAPI
+2021-08-20 09:20:44.972 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-20 09:20:44.984 +02:00 [INF] Hosting environment: Development
+2021-08-20 09:20:44.989 +02:00 [INF] Content root path: C:\Users\sferrand\Sergio\00_ACTUAL\CSharpProjects\JumpTheQueue\Templates\WebAPI\Devon4Net.Application.WebAPI
+2021-08-20 09:20:44.995 +02:00 [DBG] Hosting started
+2021-08-20 09:20:45.071 +02:00 [DBG] Connection id "0HMB3LC39AEID" received FIN.
+2021-08-20 09:20:45.072 +02:00 [DBG] Connection id "0HMB3LC39AEID" accepted.
+2021-08-20 09:20:45.078 +02:00 [DBG] Connection id "0HMB3LC39AEID" started.
+2021-08-20 09:20:45.113 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:20:45.221 +02:00 [DBG] Connection id "0HMB3LC39AEID" stopped.
+2021-08-20 09:20:45.227 +02:00 [DBG] Connection id "0HMB3LC39AEID" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:20:47.401 +02:00 [DBG] Connection id "0HMB3LC39AEIE" accepted.
+2021-08-20 09:20:47.403 +02:00 [DBG] Connection id "0HMB3LC39AEIE" started.
+2021-08-20 09:20:47.512 +02:00 [DBG] Connection id "0HMB3LC39AEIE" received FIN.
+2021-08-20 09:20:47.526 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:20:47.571 +02:00 [DBG] Connection id "0HMB3LC39AEIE" stopped.
+2021-08-20 09:20:47.578 +02:00 [DBG] Connection id "0HMB3LC39AEIE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:20:47.657 +02:00 [DBG] Connection id "0HMB3LC39AEIF" accepted.
+2021-08-20 09:20:47.659 +02:00 [DBG] Connection id "0HMB3LC39AEIF" started.
+2021-08-20 09:20:47.665 +02:00 [DBG] Connection id "0HMB3LC39AEIF" received FIN.
+2021-08-20 09:20:47.666 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-08-20 09:20:47.702 +02:00 [DBG] Connection id "0HMB3LC39AEIF" stopped.
+2021-08-20 09:20:47.705 +02:00 [DBG] Connection id "0HMB3LC39AEIF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-08-20 09:20:47.828 +02:00 [DBG] Connection id "0HMB3LC39AEIG" accepted.
+2021-08-20 09:20:47.836 +02:00 [DBG] Connection id "0HMB3LC39AEIG" started.
+2021-08-20 09:20:47.972 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html  
+2021-08-20 09:20:47.981 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-08-20 09:20:47.983 +02:00 [DBG] Connection id "0HMB3LC39AEIH" accepted.
+2021-08-20 09:20:47.984 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:20:47.987 +02:00 [DBG] Connection id "0HMB3LC39AEIH" started.
+2021-08-20 09:20:48.009 +02:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-08-20 09:20:48.032 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:20:48.192 +02:00 [INF] Request finished in 225.3097ms 200 text/html;charset=utf-8
+2021-08-20 09:20:48.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css  
+2021-08-20 09:20:48.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js  
+2021-08-20 09:20:48.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js  
+2021-08-20 09:20:48.228 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:20:48.230 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:20:48.238 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:20:48.241 +02:00 [DBG] The request path /swagger/swagger-ui.css does not match an existing file
+2021-08-20 09:20:48.245 +02:00 [DBG] The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file
+2021-08-20 09:20:48.252 +02:00 [DBG] The request path /swagger/swagger-ui-bundle.js does not match an existing file
+2021-08-20 09:20:48.255 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:20:48.259 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:20:48.260 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:20:48.315 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-08-20 09:20:48.340 +02:00 [INF] Request finished in 113.9867ms 200 text/css
+2021-08-20 09:20:48.345 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-08-20 09:20:48.354 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-08-20 09:20:48.365 +02:00 [INF] Request finished in 139.1512ms 200 application/javascript
+2021-08-20 09:20:48.365 +02:00 [INF] Request finished in 139.4299ms 200 application/javascript
+2021-08-20 09:20:48.626 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json  
+2021-08-20 09:20:48.630 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:20:48.636 +02:00 [DBG] The request path /swagger/v1/swagger.json does not match an existing file
+2021-08-20 09:20:48.643 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:20:50.157 +02:00 [INF] Request finished in 1532.2195ms 200 application/json;charset=utf-8
+2021-08-20 09:21:18.721 +02:00 [INF] Request starting HTTP/2 POST https://localhost:8085/add_futball_player_rabbitMq application/json 72
+2021-08-20 09:21:18.725 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:21:18.729 +02:00 [DBG] POST requests are not supported
+2021-08-20 09:21:18.734 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:21:18.739 +02:00 [DBG] POST requests are not supported
+2021-08-20 09:21:18.763 +02:00 [DBG] No candidates found for the request path '/add_futball_player_rabbitMq'
+2021-08-20 09:21:18.767 +02:00 [DBG] Request did not match any endpoints
+2021-08-20 09:21:18.901 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-08-20 09:21:18.962 +02:00 [DBG] Request successfully matched the route with name 'null' and template 'add_futball_player_rabbitMq'
+2021-08-20 09:21:19.037 +02:00 [INF] Route matched with {action = "AddNewFutballPlayerRabbitMq", controller = "FutballPlayers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddNewFutballPlayerRabbitMq(Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto) on controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation).
+2021-08-20 09:21:19.048 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-08-20 09:21:19.062 +02:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-08-20 09:21:19.074 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-08-20 09:21:19.079 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-08-20 09:21:19.093 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-08-20 09:21:19.104 +02:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-08-20 09:21:19.106 +02:00 [INF] CORS policy execution successful.
+2021-08-20 09:21:19.111 +02:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:21:19.124 +02:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:21:19.151 +02:00 [DBG] Attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' ...
+2021-08-20 09:21:19.166 +02:00 [DBG] Attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' using the name '' in request data ...
+2021-08-20 09:21:19.188 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-08-20 09:21:19.241 +02:00 [DBG] Connection id "0HMB3LC39AEIG", Request id "0HMB3LC39AEIG:0000000B": started reading request body.
+2021-08-20 09:21:19.252 +02:00 [DBG] Connection id "0HMB3LC39AEIG", Request id "0HMB3LC39AEIG:0000000B": done reading request body.
+2021-08-20 09:21:19.284 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'
+2021-08-20 09:21:19.297 +02:00 [DBG] Done attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:21:19.307 +02:00 [DBG] Done attempting to bind parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:21:19.312 +02:00 [DBG] Attempting to validate the bound parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto' ...
+2021-08-20 09:21:19.329 +02:00 [DBG] Done attempting to validate the bound parameter 'futballPlayer' of type 'Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto'.
+2021-08-20 09:21:19.341 +02:00 [DBG] Executing AddNewFutballPlayerRabbitMq from controller FutballPlayersController
+2021-08-20 09:21:19.365 +02:00 [DBG] Declared exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation: type=topic, durable=true, autoDelete=false, arguments=null
+2021-08-20 09:21:19.428 +02:00 [DBG] Published to exchange Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation with routingKey= and correlationId=ce89e62d-76bf-40d3-ae84-07d172741768
+2021-08-20 09:21:19.434 +02:00 [INF] Message AddNewFutballPlayerCommandRabbitMq with identifier '4733df35-15aa-43b7-98ea-23d1019edde9' published
+2021-08-20 09:21:19.444 +02:00 [DBG] Message delivered to consumer 6e97a714-c48c-4ea2-add0-e32f8033edf0 with deliveryTag 1
+2021-08-20 09:21:19.471 +02:00 [DBG] Received message with receivedInfo=[ConsumerTag=6e97a714-c48c-4ea2-add0-e32f8033edf0, DeliveryTag=1, Redelivered=False, Exchange=Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation, RoutingKey=, Queue=Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Commands.AddNewFutballPlayerCommandRabbitMq, Devon4Net.WebAPI.Implementation_AddNewFutballPlayerCommandRabbitMq]
+2021-08-20 09:21:19.472 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-08-20 09:21:19.499 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-08-20 09:21:19.503 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-08-20 09:21:19.509 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-08-20 09:21:19.512 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-08-20 09:21:19.514 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-08-20 09:21:19.520 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2021-08-20 09:21:19.542 +02:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.AddNewFutballPlayerRabbitMq (Devon4Net.WebAPI.Implementation) in 433.523ms
+2021-08-20 09:21:19.549 +02:00 [INF] Request finished in 828.6645ms 200 application/json; charset=utf-8
+2021-08-20 09:21:19.778 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-08-20 09:21:19.819 +02:00 [DBG] AddNewFutballPlayer method from repository FutballPlayersRepository
+2021-08-20 09:21:20.541 +02:00 [INF] Entity Framework Core 3.1.13 initialized 'FutballPlayersContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-20 09:21:20.635 +02:00 [DBG] 'FutballPlayersContext' generated a temporary value for the 'Id' property of new 'FutballPlayers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:21:20.771 +02:00 [DBG] Context 'FutballPlayersContext' started tracking 'FutballPlayers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:21:20.783 +02:00 [DBG] SaveChanges starting for 'FutballPlayersContext'.
+2021-08-20 09:21:20.792 +02:00 [DBG] DetectChanges starting for 'FutballPlayersContext'.
+2021-08-20 09:21:20.817 +02:00 [DBG] DetectChanges completed for 'FutballPlayersContext'.
+2021-08-20 09:21:20.912 +02:00 [DBG] Opening connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:21.341 +02:00 [DBG] Opened connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:21.351 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2021-08-20 09:21:21.401 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2021-08-20 09:21:21.508 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2021-08-20 09:21:21.524 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (9ms).
+2021-08-20 09:21:21.566 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FutballPlayers] ([FirstName], [FutballTeam], [LastName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FutballPlayers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-08-20 09:21:21.713 +02:00 [INF] Executed DbCommand (154ms) [Parameters=[@p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FutballPlayers] ([FirstName], [FutballTeam], [LastName])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FutballPlayers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-08-20 09:21:21.833 +02:00 [DBG] Foreign key property 'FutballPlayers.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2021-08-20 09:21:21.869 +02:00 [DBG] A data reader was disposed.
+2021-08-20 09:21:21.881 +02:00 [DBG] Committing transaction.
+2021-08-20 09:21:21.911 +02:00 [DBG] Committing transaction.
+2021-08-20 09:21:21.918 +02:00 [DBG] Closing connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:21.936 +02:00 [DBG] Closed connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:21.947 +02:00 [DBG] Disposing transaction.
+2021-08-20 09:21:22.033 +02:00 [DBG] An 'FutballPlayers' entity tracked by 'FutballPlayersContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:21:22.045 +02:00 [DBG] SaveChanges completed for 'FutballPlayersContext' with 1 entities written to the database.
+2021-08-20 09:21:22.054 +02:00 [DBG] An 'FutballPlayers' entity tracked by 'FutballPlayersContext' changed from '"Unchanged"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-08-20 09:21:22.069 +02:00 [INF] Message AddNewFutballPlayerCommandRabbitMq with identifier '4733df35-15aa-43b7-98ea-23d1019edde9' published
+2021-08-20 09:21:27.291 +02:00 [INF] Request starting HTTP/2 GET https://localhost:8085/get_all_futball_players  
+2021-08-20 09:21:27.294 +02:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-08-20 09:21:27.297 +02:00 [DBG] The request path /get_all_futball_players does not match a supported file type
+2021-08-20 09:21:27.302 +02:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-08-20 09:21:27.310 +02:00 [DBG] The request path  does not match the path filter
+2021-08-20 09:21:27.312 +02:00 [DBG] No candidates found for the request path '/get_all_futball_players'
+2021-08-20 09:21:27.322 +02:00 [DBG] Request did not match any endpoints
+2021-08-20 09:21:27.327 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-08-20 09:21:27.337 +02:00 [DBG] Request successfully matched the route with name 'null' and template 'get_all_futball_players'
+2021-08-20 09:21:27.358 +02:00 [INF] Route matched with {action = "GetAllFutballPlayers", controller = "FutballPlayers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAllFutballPlayers() on controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation).
+2021-08-20 09:21:27.367 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-08-20 09:21:27.375 +02:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-08-20 09:21:27.396 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-08-20 09:21:27.404 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-08-20 09:21:27.410 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-08-20 09:21:27.417 +02:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:21:27.421 +02:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController (Devon4Net.WebAPI.Implementation)
+2021-08-20 09:21:27.433 +02:00 [DBG] Executing <GetAllFutballPlayers>d__13 from controller {m.Name}
+2021-08-20 09:21:27.483 +02:00 [DBG] GetAllFutballPlayers method from service FutballPlayersService
+2021-08-20 09:21:27.487 +02:00 [DBG] GetAllFutballPlayers method from FutballPlayersRepository
+2021-08-20 09:21:27.576 +02:00 [INF] Entity Framework Core 3.1.13 initialized 'FutballPlayersContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-20 09:21:27.848 +02:00 [DBG] queryContext => new QueryingEnumerable<FutballPlayers>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    ReaderColumn[] { ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, }, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, FutballPlayers>, 
+    Devon4Net.WebAPI.Implementation.Domain.Database.FutballPlayersContext, 
+    null
+)
+2021-08-20 09:21:27.900 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2021-08-20 09:21:27.905 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2021-08-20 09:21:27.910 +02:00 [DBG] Opening connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:27.917 +02:00 [DBG] Opened connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:27.922 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[FirstName], [f].[FutballTeam], [f].[LastName]
+FROM [FutballPlayers] AS [f]
+2021-08-20 09:21:27.949 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[FirstName], [f].[FutballTeam], [f].[LastName]
+FROM [FutballPlayers] AS [f]
+2021-08-20 09:21:28.027 +02:00 [DBG] A data reader was disposed.
+2021-08-20 09:21:28.032 +02:00 [DBG] Closing connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:28.039 +02:00 [DBG] Closed connection to database 'master' on server 'localhost,1422'.
+2021-08-20 09:21:28.061 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-08-20 09:21:28.074 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-08-20 09:21:28.078 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-08-20 09:21:28.091 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-08-20 09:21:28.098 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-08-20 09:21:28.107 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-08-20 09:21:28.131 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Dto.FutballPlayerDto, Devon4Net.WebAPI.Implementation, Version=3.1.10.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-08-20 09:21:28.142 +02:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.FutballPlayersManagement.Controllers.FutballPlayersController.GetAllFutballPlayers (Devon4Net.WebAPI.Implementation) in 725.6719ms
+2021-08-20 09:21:28.155 +02:00 [DBG] 'FutballPlayersContext' disposed.
+2021-08-20 09:21:28.167 +02:00 [INF] Request finished in 876.5227ms 200 application/json; charset=utf-8
